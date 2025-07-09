@@ -110,15 +110,6 @@ Name: Any
 
 ---
 
-## 📬 Contact
-
-Have questions or feedback? Reach out:
-
-* Email: [your@email.com](mailto:your@email.com)
-* GitHub: [your-username](https://github.com/your-username)
-
----
-
 ## ⭐️ Star This Repo
 
 If you find this project useful, please star it on GitHub ⭐️
