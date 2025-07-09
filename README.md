@@ -118,6 +118,6 @@ If you find this project useful, please star it on GitHub ⭐️
 
 ## 📝 License
 
-This project is licensed under the [The Unlicense](https://unlicense.org/).
+This project is licensed under the [The Unlicense](/UNLICENSE).
 
 You are free to use, modify, and distribute this project without restriction.
