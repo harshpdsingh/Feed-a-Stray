@@ -9,7 +9,7 @@ A donation platform where users can contribute to feed stray animals. Built with
 
 ## 🌐 Live Demo
 
-**[Visit Feed a Stray Live](https://feed-a-stray.vercel.app)**
+**[Visit Feed a Stray Live](https://feed-a-stray.vercel.app/)**
 
 ---
 
@@ -40,7 +40,7 @@ Follow these steps to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/feed-a-stray.git
+git clone https://github.com/harshpdsingh/Feed-a-Stray.git
 cd feed-a-stray
 ```
 
