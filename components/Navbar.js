@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { usePathname } from "next/navigation";
@@ -8,6 +8,25 @@ function Navbar() {
   const { data: session } = useSession();
   const [showdropdown, setShowdropdown] = useState(false);
   const pathname = usePathname();
+  const [adminUsername, setAdminUsername] = useState("");
+
+  useEffect(() => {
+    const fetchAdmin = async () => {
+      try {
+        const res = await fetch("/api/admin");
+        const admin = await res.json();
+        if (admin?.username) {
+          setAdminUsername(admin.username);
+        }
+      } catch (err) {
+        console.error("Failed to fetch admin username", err);
+      }
+    };
+
+    if (session && !session.user.isAdmin) {
+      fetchAdmin();
+    }
+  }, [session]);
 
   
   return (
@@ -68,7 +87,7 @@ function Navbar() {
                       href={
                         session.user.isAdmin
                           ? "/dashboard"
-                          : `/${encodeURIComponent(session.user.name)}`
+                          : `/${encodeURIComponent(adminUsername)}`
                       }
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >

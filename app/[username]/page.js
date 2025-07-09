@@ -32,8 +32,9 @@ const page = async ({ params }) => {
 export default page;
 
 export async function generateMetadata({ params }) {
+  const user = await params;
   return {
-    title: `Feed a Stray: ${params.username}`,
-    description: `Support stray animals with ${params.username}.`,
+    title: `Feed a Stray: ${user.username}`,
+    description: `Support stray animals with ${user.username}.`,
   };
 }
