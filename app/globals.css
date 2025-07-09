@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* ───── Elegant Dark Blue Scrollbar (Subtle but Visible) ───── */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 130, 0.4); /* bluish-gray thumb */
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(140, 140, 180, 0.6); /* lighter on hover */
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 100, 130, 0.4) transparent;
+}
+
+/* Prevent side overflow lines */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
