@@ -84,7 +84,7 @@ const Dashboard = () => {
           <div className="my-2">
             <label
               htmlFor="name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Name
             </label>
@@ -101,7 +101,7 @@ const Dashboard = () => {
           <div className="my-2">
             <label
               htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Email
             </label>
@@ -118,7 +118,7 @@ const Dashboard = () => {
           <div className="my-2">
             <label
               htmlFor="username"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Username
             </label>
@@ -135,7 +135,7 @@ const Dashboard = () => {
           {/* <div className="my-2">
             <label
               htmlFor="profilepic"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Profile Picture
             </label>
@@ -153,7 +153,7 @@ const Dashboard = () => {
           {/* <div className="my-2">
             <label
               htmlFor="coverpic"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Cover Picture
             </label>
@@ -170,7 +170,7 @@ const Dashboard = () => {
           <div className="my-2">
             <label
               htmlFor="razorpayid"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Razorpay Id
             </label>
@@ -187,7 +187,7 @@ const Dashboard = () => {
           <div className="my-2">
             <label
               htmlFor="razorpaysecret"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Razorpay Secret
             </label>
